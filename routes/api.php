@@ -21,6 +21,7 @@ Route::post('/logout',[AuthController::class, 'logout']);
 
 Route::get('/tasks',[TaskController::class, 'index']);
 Route::post('/tasks',[TaskController::class, 'store']);
+Route::get('/tasks/{id}',[TaskController::class, 'show']);
 
 
 
